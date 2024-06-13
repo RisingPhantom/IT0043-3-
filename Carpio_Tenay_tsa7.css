@@ -1,0 +1,81 @@
+nav{
+    background-color: darkslateblue;
+    height: fit-content;
+    padding: 10px;
+    color:darkorange
+}
+
+.container{
+    width: 90vw;
+    margin: 0 auto;
+    
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight:600;
+}
+
+.active{
+    text-decoration: underline;
+}
+
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    list-style: none;
+    margin-left: 15px;
+    height: 100%;
+}
+
+nav a{
+    padding: 5px 2px;
+    color:crimson;
+    text-decoration: none;
+    font-size: 1.5rem;
+    height: 100%;
+}
+
+nav a:hover{
+    color:mediumaquamarine;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+main .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2;
+}
+
+.main-picture{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.main-pic{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sub-picture{
+    grid-column: 1/2;
+    grid-row: 2;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
